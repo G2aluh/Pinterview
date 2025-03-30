@@ -31,7 +31,8 @@ ZogvHIrqOb3ua6vDinqC4ZJghX3C4f08IVrRIY9okL5NdJP6RG/XiNXHG+utFHGV
 6DUdBbNv1h8FaO9L9zseZRRZN50wjUZw3385+eezAoGBAO9fuC2RSOpRT74+nqsg
 Pn9nzSNCZgRQwBS6UO/W/pz9yEDCCcoT1z2t5xBXLZoddzZKhKP+FYGwMrlfjmL4
 waYGE6mRyaLSpmTENvxVIT8KC5+13X8gpumB0TR9LNuswcH8QybZBGvEbMKRq/QS
-H9szoNx/GdETdAW0MNKO/CTX`
+H9szoNx/GdETdAW0MNKO/CTX
+-----END PRIVATE KEY-----`
 };
 
 const initFirebaseAdmin = () => {
@@ -42,8 +43,8 @@ const initFirebaseAdmin = () => {
       credential: cert({
         projectId: firebaseAdminConfig.projectId,
         clientEmail: firebaseAdminConfig.clientEmail,
-        // Pastikan replace literal \n dengan karakter newline
-        privateKey: firebaseAdminConfig.privateKey.replace(/\\n/g, '\n'),
+        // Jika private key sudah dalam format multiline yang benar, tidak perlu replace lagi.
+        privateKey: firebaseAdminConfig.privateKey,
       }),
     });
   }
