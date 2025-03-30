@@ -10,7 +10,7 @@ interface FormFieldProps<T extends FieldValues> {
     placeholder?: string;
     type?: 'text' | 'email' | 'password' | 'file'
 }
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 const FormField = <T extends FieldValues>({control, name, label, placeholder, type="text" }: FormFieldProps<T>) => (
     <Controller 
     control={control} 
