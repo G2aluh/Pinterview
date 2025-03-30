@@ -84,7 +84,7 @@ const AuthForm = ({type}: {type: FormType}) => {
 
     } catch (error) {
         console.log(error)
-        toast.error(`Ada Yang Salah: ${error}`)
+        toast.error(`Ada Yang Salah : ${error}`)
     }
   }
 
