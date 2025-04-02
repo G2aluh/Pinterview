@@ -17,7 +17,7 @@ const page = () => {
           Siap untuk menghadapi interview? Dengan teknologi AI yang canggih, kami siap membantu Anda.
         </p>
         <Button asChild className='btn-primary max-sm:w-full'>
-          <Link href='/sign-in'>Mulai Interview</Link>
+          <Link href='/interview'>Mulai Interview</Link>
         </Button>
       </div>
 
